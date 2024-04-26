@@ -2,7 +2,7 @@
 
 ## Finite Sequence of Complex Number
 
--  create a random finite sequence of complex number
+###  create a random finite sequence of complex number
 
 ```python
 Finite_Sequence(name, first_index, last_index, min_value, max_value)
@@ -14,7 +14,8 @@ x = Finite_Sequence('x', -3, 3, -1, 1)
 ```
 
 
-- set sequence value, index must be an integer number list and value can be an integer, float or complex number list.
+### set sequence value
+- index must be an integer list, and value can be an integer, float or complex number list
 
 ```python
 sequence.set_sequence(index, value):
@@ -27,122 +28,190 @@ value = [complex(2, 3), complex(4, 4), complex(-1, 6), complex(3, 6), complex(-3
 x.set_sequence(index, value)
 ```
 
-- get index of x
+### get index of x
 
 ```python
 index = x.get_index()
 ```
 
-- get value of x
+### get value of x
 
 ```python
 value = x.get_value()
 ```
 
--get real part of x
+### get real part of x
 
 ```python
 real = x.get_real()
 ```
 
-- get imaginary part of x
+### get imaginary part of x
 
 ```python
 imag = x.get_imaginary()
 ```
 
-- get name of x
+### get name of x
 
 ```python
 name = x.get_name()
 ```
 
-- time inverse: x[-n]
+### time inverse: x[-n]
 
 ```python
 x.time_inverse()
 ```
 
-- conjugate: x*[n]
+### conjugate: x*[n]
 
 ```python
 x.conjugate_seq()
 ```
 
-- conjugate and time inverse: x*[-n]
+### conjugate and time inverse: x*[-n]
 
 ```python
 x.conj_ti()
 ```
 
-- minus conjugate and time inverse: -x*[-n]
+### minus conjugate and time inverse: -x*[-n]
 
 ```python
 x.minus_conj_ti()
 ```
 
-- time shift: x[n-k]
+### time shift: x[n-k]
 
 ```python
 sequence.time_shift(k)
 ```
 
+- example: x[n-3]
+
 ```python
-#example: x[n-3]
 x.time_shift(3)
 ```
 
-- plot Real Part, Imaginary Part, n of x[n]
+### Conjugate Symmetric Decomposition
+- any sequence can be expressed as conjugate symmetric (CS) and conjugate antisymmetric (CA) part
+- x[n] = xcs[n] + xca[n]
+
+```python
+#function will print out CS and CA
+x.conj_sym_decomp()
+```
+
+### plot Real Part, Imaginary Part, n of x[n]
 
 ```python
 sequence.plot_3d(figure)
 ```
 
+- example: plot x[n] in 3D and figure number: 1
+
 ```python
-#example: plot x[n] in 3D and figure number: 1
 x.plot_3d(1)
 ```
 
-- plot Real Part
+### plot Real Part of x[n]
 
 ```python
 sequence.plot_R(figure)
 ```
 
+- example:
+
 ```python
-#example:
 x.plot_R(2)
 ```
 
-- plot Imaginary Part
+### plot Imaginary Part of x[n]
 
 ```python
 sequence.plot_I(figure)
 ```
 
+- example:
+
 ```python
-#example:
 x.plot_I(3)
 ```
 
-- create an unit sample: $\delta[n]$
+### create an unit sample: $\delta[n]$
 
 ```python
 sequence = unit_sample(first_index, last_index)
 ```
 
-```python
-#example: $\delta[n], -2<=n<=2$
-delta = unit_sample(-2, 2)
-```
+- example: d[n], -5<=n<=5
 
-- create an unit step: $\mu[n]$
+```python
+d = unit_sample(-5, 5)
+#plot
+d.plot_3d(1)
+d.plot_R(2)
+d.plot_I(3)
+```
+<table>
+  <tr>
+    <td align="center">
+	[!image](unit_sample_3d.png)
+</td>
+   <td align="center">
+	[!image](unit_sample_R.png)
+   </td>
+    <td align="center">
+	[!image](unit_sample_I.png)
+   </td>
+  </tr>
+  <tr>
+    <th align="center">3-D plot</th>
+    <th align="center">R</th>
+	<th align="center">I</th>
+  </tr>
+</table>
+
+### create an unit step: $\mu[n]$
 
 ```python
 sequence = unit_step(first_index, last_index)
 ```
 
+- example: $\mu[n], -5<=n<=5$
+
 ```python
-#example: $\mu[n], -2<=n<=2$
-mu = unit_step(-2, 2)
+u = unit_step(-5, 5)
+#plot
+u.plot_3d(4)
+u.plot_R(5)
+u.plot_I(6)
+```
+
+### calculate power of a complex number
+- $\alpha^n$, $\alpha$ is a complex number, and n is an integer
+
+```python
+result = cpower(alpha,n)
+```
+
+### create a complex exponential sequence
+- x[n] = A*$\alpha$^n, A and $\alpha$ is complex number, and n is an integer
+
+```python
+sequence = complex_exponential(first_index, last_index, A, alpha)
+```
+
+- example: $x[n] = e^{(-1/12+j*\pi/6)*n} = e^{-n/12}*cos(pi*n/6) + j*e^{-n/12}*sin(pi*n/6)$
+
+```python
+A = 1
+alpha = cmath.exp(complex(-1/12,cmath.pi/6))
+complex_exponential = complex_exponential(0, 40, A, alpha)
+
+#plot
+complex_exponential.plot_3d(7)
+complex_exponential.plot_R(8)
+complex_exponential.plot_I(9)
 ```
