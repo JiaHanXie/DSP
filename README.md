@@ -8,8 +8,9 @@
 Finite_Sequence(name, first_index, last_index, min_value, max_value)
 ```
 
+- example: create a sequence x[n] with random number, -1 <= x <= 1 and -3 <= n <= 3
+
 ```python
-#example: create a sequence x[n] with random number, -1 <= x <= 1 and -3 <= n <= 3
 x = Finite_Sequence('x', -3, 3, -1, 1)
 ```
 
@@ -157,14 +158,14 @@ d.plot_I(3)
 <table>
   <tr>
     <td align="center">
-	[!image](unit_sample_3d.png)
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_sample_3d.png" alt=""></img>
 </td>
-   <td align="center">
-	[!image](unit_sample_R.png)
-   </td>
+<td align="center">
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_step_R.png" alt=""></img>
+</td>
     <td align="center">
-	[!image](unit_sample_I.png)
-   </td>
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_step_I.png" alt=""></img>
+</td>
   </tr>
   <tr>
     <th align="center">3-D plot</th>
