@@ -217,13 +217,13 @@ result = cpower(alpha,n)
 ```
 
 ### create a complex exponential sequence
-- x[n] = A*$\alpha$^n, A and $\alpha$ is complex number, and n is an integer
+- x[n] = $A*\alpha^n$, A and $\alpha$ is complex number, and n is an integer
 
 ```python
 sequence = complex_exponential(first_index, last_index, A, alpha)
 ```
 
-- example: $x[n] = e^{(-1/12+j*\pi/6)*n} = e^{-n/12}*cos(pi*n/6) + j*e^{-n/12}*sin(pi*n/6)$
+- example: $x[n] = e^{( -1/12+j* \pi/ 6 )*n} = e^{-n/12}*cos( \pi *n/6) + j*e^{-n/12}*sin( \pi *n/6)$
 
 ```python
 A = 1
@@ -242,7 +242,7 @@ complex_exponential.plot_I(9)
 <img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/complexexponential_3d.png" alt=""></img>
 </td>
 <td align="center">
-<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/complexexponential_R.png" alt=""></img>
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/complexexponential_R.png.png" alt=""></img>
 </td>
     <td align="center">
 <img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/complexexponential_I.png" alt=""></img>
