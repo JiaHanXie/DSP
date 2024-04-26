@@ -8,7 +8,7 @@
 Finite_Sequence(name, first_index, last_index, min_value, max_value)
 ```
 
-	example: create a sequence x[n] with random number, -1 <= x <= 1 and -3 <= n <= 3
+	- example: create a sequence x[n] with random number, -1 <= x <= 1 and -3 <= n <= 3
 ```python
 x = Finite_Sequence('x', -3, 3, -1, 1)
 ```
