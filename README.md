@@ -161,10 +161,10 @@ d.plot_I(3)
 <img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_sample_3d.png" alt=""></img>
 </td>
 <td align="center">
-<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_step_R.png" alt=""></img>
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_sample_R.png" alt=""></img>
 </td>
     <td align="center">
-<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_step_I.png" alt=""></img>
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_sample_I.png" alt=""></img>
 </td>
   </tr>
   <tr>
@@ -189,6 +189,25 @@ u.plot_3d(4)
 u.plot_R(5)
 u.plot_I(6)
 ```
+
+<table>
+  <tr>
+    <td align="center">
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_step_3d.png" alt=""></img>
+</td>
+<td align="center">
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_step_R.png" alt=""></img>
+</td>
+    <td align="center">
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_step_I.png" alt=""></img>
+</td>
+  </tr>
+  <tr>
+    <th align="center">3-D plot</th>
+    <th align="center">R</th>
+	<th align="center">I</th>
+  </tr>
+</table>
 
 ### calculate power of a complex number
 - $\alpha^n$, $\alpha$ is a complex number, and n is an integer
@@ -216,3 +235,22 @@ complex_exponential.plot_3d(7)
 complex_exponential.plot_R(8)
 complex_exponential.plot_I(9)
 ```
+
+<table>
+  <tr>
+    <td align="center">
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/complexexponential_3d.png" alt=""></img>
+</td>
+<td align="center">
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/complexexponential_R.png" alt=""></img>
+</td>
+    <td align="center">
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/complexexponential_I.png" alt=""></img>
+</td>
+  </tr>
+  <tr>
+    <th align="center">3-D plot</th>
+    <th align="center">R</th>
+	<th align="center">I</th>
+  </tr>
+</table>
