@@ -131,7 +131,7 @@ x.plot_I(3)
 sequence = unit_sample(first_index, last_index)
 ```
 
-example: $\delta[n], n from -2 to 2$
+example: $\delta[n], -2<=n<=2$
 ```python
 delta = unit_sample(-2, 2)
 ```
@@ -142,7 +142,7 @@ delta = unit_sample(-2, 2)
 sequence = unit_step(first_index, last_index)
 ```
 
-example: $\mu[n], n from -2 to 2$
+example: $\mu[n], -2<=n<=2$
 ```python
 mu = unit_step(-2, 2)
 ```
