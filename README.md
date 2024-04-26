@@ -8,8 +8,8 @@
 Finite_Sequence(name, first_index, last_index, min_value, max_value)
 ```
 
-	- example: create a sequence x[n] with random number, -1 <= x <= 1 and -3 <= n <= 3
 ```python
+#example: create a sequence x[n] with random number, -1 <= x <= 1 and -3 <= n <= 3
 x = Finite_Sequence('x', -3, 3, -1, 1)
 ```
 
@@ -20,8 +20,8 @@ x = Finite_Sequence('x', -3, 3, -1, 1)
 sequence.set_sequence(index, value):
 ```
 
-	example: set x[n] = {2+3j, 4+4j, -1+6j, 3+6j, -3+4j}, -2 <= n <= 2
 ```python
+#example: set x[n] = {2+3j, 4+4j, -1+6j, 3+6j, -3+4j}, -2 <= n <= 2
 index = [-2, -1, 0, 1, 2]
 value = [complex(2, 3), complex(4, 4), complex(-1, 6), complex(3, 6), complex(-3, 4)]
 x.set_sequence(index, value)
@@ -87,8 +87,8 @@ x.minus_conj_ti()
 sequence.time_shift(k)
 ```
 
-	example: x[n-3]
 ```python
+#example: x[n-3]
 x.time_shift(3)
 ```
 
@@ -98,8 +98,8 @@ x.time_shift(3)
 sequence.plot_3d(figure)
 ```
 
-	example: plot x[n] in 3D and figure number: 1
 ```python
+#example: plot x[n] in 3D and figure number: 1
 x.plot_3d(1)
 ```
 
@@ -109,8 +109,8 @@ x.plot_3d(1)
 sequence.plot_R(figure)
 ```
 
-	example:
 ```python
+#example:
 x.plot_R(2)
 ```
 
@@ -120,8 +120,8 @@ x.plot_R(2)
 sequence.plot_I(figure)
 ```
 
-	example:
 ```python
+#example:
 x.plot_I(3)
 ```
 
@@ -131,8 +131,8 @@ x.plot_I(3)
 sequence = unit_sample(first_index, last_index)
 ```
 
-	example: $\delta[n], -2<=n<=2$
 ```python
+#example: $\delta[n], -2<=n<=2$
 delta = unit_sample(-2, 2)
 ```
 
@@ -142,7 +142,7 @@ delta = unit_sample(-2, 2)
 sequence = unit_step(first_index, last_index)
 ```
 
-	example: $\mu[n], -2<=n<=2$
 ```python
+#example: $\mu[n], -2<=n<=2$
 mu = unit_step(-2, 2)
 ```
