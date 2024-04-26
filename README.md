@@ -223,7 +223,7 @@ result = cpower(alpha,n)
 sequence = complex_exponential(first_index, last_index, A, alpha)
 ```
 
-- example: $x[n] = e^{( -1/12+j* \pi/ 6 )*n} = e^{-n/12}*cos( \pi *n/6) + j*e^{-n/12}*sin( \pi *n/6)$
+- example: $x[n]=e^{(-\frac{1}{12}+j\frac{\pi}{6})n)}=e^{-\frac{n}{12}}cos(\frac{\pi n}{6})+e^{-\frac{n}{12}}sin(\frac{\pi n}{6})$
 
 ```python
 A = 1
