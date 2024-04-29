@@ -146,8 +146,8 @@ class Finite_Sequence:
 		print('index = { ' + str(self.__index) + ' }')
 		print('xcs[n] = { ' + str(xcs) + ' }')
 		print('xca[n] = { ' + str(xca) + ' }')
-		conj_ti.__del__()
-		minus_conj_ti.__del__()
+		xcs_xca = [conj_ti, minus_conj_ti]
+		return xcs_xca
 	
 #delta[n]
 def unit_sample(first_index = 0, last_index = 0):

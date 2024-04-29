@@ -100,8 +100,10 @@ x.time_shift(3)
 - x[n] = xcs[n] + xca[n]
 
 ```python
-#function will print out CS and CA
-x.conj_sym_decomp()
+#function will returnt a list which contains cs[n] and ca[n]
+xcs_xca = x.conj_sym_decomp()
+xcs = xcs_xca[0]
+xca = xcs_xca[1]
 ```
 
 ### plot Real Part, Imaginary Part, n of x[n]
