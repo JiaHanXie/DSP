@@ -3,7 +3,7 @@
 - environment: python 3.10.12
 
 ```python
-from ComplexSequence import *
+from Complex_Sequence import *
 ```
 
 ###  create a random finite sequence of complex number
