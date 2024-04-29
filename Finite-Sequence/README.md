@@ -164,13 +164,13 @@ d.plot_I(3)
 <table>
   <tr>
     <td align="center">
-<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_sample_3d.png" alt=""></img>
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/Finite-Sequence/unit_sample_3d.png" alt=""></img>
 </td>
 <td align="center">
-<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_sample_R.png" alt=""></img>
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/Finite-Sequence/unit_sample_R.png" alt=""></img>
 </td>
     <td align="center">
-<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_sample_I.png" alt=""></img>
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/Finite-Sequence/unit_sample_I.png" alt=""></img>
 </td>
   </tr>
   <tr>
@@ -199,13 +199,13 @@ u.plot_I(6)
 <table>
   <tr>
     <td align="center">
-<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_step_3d.png" alt=""></img>
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/Finite-Sequence/unit_step_3d.png" alt=""></img>
 </td>
 <td align="center">
-<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_step_R.png" alt=""></img>
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/Finite-Sequence/unit_step_R.png" alt=""></img>
 </td>
     <td align="center">
-<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/unit_step_I.png" alt=""></img>
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/Finite-Sequence/unit_step_I.png" alt=""></img>
 </td>
   </tr>
   <tr>
@@ -245,13 +245,13 @@ complex_exponential.plot_I(9)
 <table>
   <tr>
     <td align="center">
-<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/complexexponential_3d.png" alt=""></img>
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/Finite-Sequence/complexexponential_3d.png" alt=""></img>
 </td>
 <td align="center">
-<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/complexexponential_R.png.png" alt=""></img>
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/Finite-Sequence/complexexponential_R.png.png" alt=""></img>
 </td>
     <td align="center">
-<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/complexexponential_I.png" alt=""></img>
+<img alt="" width="400" src="https://github.com/JiaHanXie/DSP/blob/main/Finite-Sequence/complexexponential_I.png" alt=""></img>
 </td>
   </tr>
   <tr>
