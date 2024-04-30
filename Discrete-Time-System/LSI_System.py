@@ -4,7 +4,7 @@ import copy
 sys.path.append('../Finite-Sequence/')
 from Complex_Sequence import *
 #
-def conv(x,h):
+def conv(x, h):
 	x_cp = copy.deepcopy(x)
 	h_cp = copy.deepcopy(h)
 	x_cp_index = x_cp.get_index()
@@ -30,6 +30,10 @@ def conv(x,h):
 	y = Finite_Sequence('y', 0, 0)
 	y.set_sequence(y_index, y_value)
 	return y
+#
+def corr(x, y):
+	y.time_inverse()
+	return conv(x, y)
 
 #
 if __name__ == '__main__':
@@ -64,3 +68,6 @@ if __name__ == '__main__':
 	print('b index: ' + str(b.get_index()))
 	print('b value: ' + str(b.get_value()))
 
+	r_xy = corr(a, b)
+	print('r_xy index: ' + str(r_xy.get_index()))
+	print('r_xy value: ' + str(r_xy.get_value()))

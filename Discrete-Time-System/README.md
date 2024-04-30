@@ -26,6 +26,21 @@ y = conv(a, b)
 print('y index: ' + str(y.get_index()))
 print('y value: ' + str(y.get_value()))
 y_ = conv(b, a)
-print('y bar index: ' + str(y_.get_index()))
-print('y bar value: ' + str(y_.get_value()))
+print('y_ index: ' + str(y_.get_index()))
+print('y_ value: ' + str(y_.get_value()))
+```
+
+### Correlation
+
+- $r_xy[n]=\sum_{k=-\infty }^{\infty}x[k]y[k-n]$
+
+```python
+r_xy = corr(x, y)
+```
+
+- example:
+```python
+r_xy = corr(a, b)
+print('r_xy index: ' + str(r_xy.get_index()))
+print('r_xy value: ' + str(r_xy.get_value()))
 ```
